@@ -3,7 +3,7 @@
 [![Code License](https://img.shields.io/badge/Code%20License-Apache_2.0-green.svg)](https://github.com/agiresearch/WarAgent/blob/main/LICENSE)
                   
 
-![front_cover1000by650](https://github.com/soomontodaas/deep_book/assets/124236761/218862aa-7486-420a-938c-d0a3bda186b9)
+             ![front_cover1000by650](https://github.com/soomontodaas/deep_book/assets/124236761/218862aa-7486-420a-938c-d0a3bda186b9)
 
 
 
