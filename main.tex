@@ -48,7 +48,8 @@
 
 \documentclass[]{article}
 \usepackage[toc]{glossaries}
-% \usepackage[acronym]{glossaries}
+% \usepackage[utf8]{inputenc}
+%  \usepackage[acronym]{glossaries}
 
 \makeglossaries
 
@@ -140,7 +141,9 @@
 \newglossaryentry{Prepared Defense}
 {
         name=Prepared Defense,
-        description={ preparedness requires considerable and consistent conceptual clarity, facile ground(defPrep=70percent)}
+        description={ preparedness requires considerable and consistent conceptual clarity, 
+        facile ground 
+        (defPrep=70\%)}
 }
 \newglossaryentry{Fortified Defense}
 {
@@ -168,6 +171,16 @@
         name=Battle of Atlantic,
         description={Battle of Atlantic is an ancient Chinese military treatise that is attributed to Sun Tzu, a legendary military strategist and philosopher. The book consists of 13 chapters, each focusing on a different aspect of warfare, such as strategy, tactics, terrain, intelligence, and leadership. The book is widely regarded as one of the most influential works on military theory and practice in history, and has been applied to various fields beyond warfare, such as business, politics, sports, and culture}
 }
+\newglossaryentry{Large Language Model}
+{
+        name=Large Language Model,
+        description={A large language model is a language model notable for its ability to achieve general-purpose language understanding and generation. LLMs acquire these abilities by learning statistical relationships from text documents during a computationally intensive \\self-supervised and \\semi-supervised training process}
+}
+\newglossaryentry{Multi Agent System}
+{
+        name=Multi Agent System,
+        description={A multi-agent system is a computerized system composed of multiple interacting intelligent agents. Multi-agent systems can solve problems that are difficult or impossible for an individual agent or a monolithic system to solve.}
+}
 
 
 \newacronym{gcd}{GCD}{Greatest Common Divisor}
@@ -194,6 +207,19 @@
 \newacronym{cp}{CP}{Combat Potential}
 \newacronym{oli}{OLI}{Operational Lethality Index}
 \newacronym{rmse}{RMSE}{Root Mean Square Error}
+\newacronym{nn}{NN}{Neural Network}
+\newacronym{fnn}{FNN}{Forward Neural Network}
+\newacronym{mlnn}{mlNN}{Multi Layered Neural Network}
+\newacronym{dqn}{DQN}{Deep Q Network}
+\newacronym{ppo}{PPO}{Policy Proximity Optimization}
+\newacronym{sarsa}{SARSA}{State action reward state action}
+\newacronym{llm}{LLM}{Large Language Model}
+\newacronym{mas}{MAS}{Multi Agent System}
+
+
+
+
+
 
 
 \title{How to create a glossary}
@@ -298,7 +324,8 @@
 \vspace*{-0.16in} % only needed for first page
 \noindent
 \resizebox{\textwidth}{\textheight}
- {\includegraphics{deep_cover_front.jpg}}\hspace*{-\textwidth}
+ {\includegraphics{front_cover1000by650.jpg}}
+ \hspace*{-\textwidth}
  % \raisebox{3in}[0in][0in]{\color{black}
  % % \makebox[\textwidth][c]{\Huge Text over Image}
  % }
@@ -316,7 +343,7 @@
  \newpage
  \centering
  \textbf{ \begin{Large}
-       Deep Policy Agents:\end{Large} 
+       Deep Neural Network Based Agents:\end{Large} 
        \newline
  \begin{small}
  The Artificially Intelligent Deeply Learned from Historical Battle Data and Sun Tzu's The Art of War Autonomous Forces on the March \end{small} }
@@ -336,11 +363,11 @@
     \normalsize
  
 \textbf{ \begin{Large}
-       Deep Policy Agents:\end{Large} 
+       Deep Neural Network Based Agents:\end{Large} 
        \newline
  \begin{small}
  The Artificially Intelligent Deeply Learned from Historical Battle Data and Sun Tzu's The Art of War Autonomous Forces on the March \end{small} }\\
-\vspace{20mm}
+\vspace{10mm}
 Sumanta Kumar Das\\
 % \newline
 % \newline
@@ -355,17 +382,18 @@ Self Publication\\
 \end{center}
  \tiny
 % \begin{fullwidth}
-~\vfill
+% ~\vfill
 \thispagestyle{empty}
 % \setlength{\parindent}{0pt}
 % \setlength{\parskip}{\baselineskip}
 \centering
-% \vspace*{1cm}
+\vspace*{1mm}
 \section*{}
-\textbf{Deep Policy Agents: \\The Artificially Intelligent Deeply Learned from Historical Battle Data and Sun Tzu's The Art of War Autonomous Forces on the March }
+\textbf{Deep Neural Network Based Agents: \\The Artificially Intelligent Deeply Learned from Historical Battle Data and Sun Tzu's The Art of War Autonomous Forces on the March }
 \newline
 \newline
 \newline
+
 
 Copyright \copyright\  \author{}{Sumanta Kumar Das}  \the\year\\
 % P-ISBN: 978-93-5264-015-6\\
@@ -384,7 +412,7 @@ email:www.github/soomontodaas.com\\
 website:www.mbsc.org\\
 \vspace{5mm}
 
-Second printing, 12 March 2024\\ Printed in India at\\ A5, Tower 10, Type 5\\East Kidwai Nagar,\\New Delhi-110023.
+Second printing, 19 May 2024\\ Printed in India at\\ A5, Tower 10, Type 5\\East Kidwai Nagar,\\New Delhi-110023.
 
 
 % \end{fullwidth}
@@ -405,10 +433,10 @@ Second printing, 12 March 2024\\ Printed in India at\\ A5, Tower 10, Type 5\\Eas
 1972 Amari, First learning ANN\\
 1979 First Deep Convolutional NN \\
 1995 Neural Prob. Language Model\\
-2015 DeepMind, DQN, V. Mnih\\
-2015 DDPG Agent,Lillicrap\\
-2017 PPO Agent, J. Schulman\\
-2018 SARSA, Sutton R.S\\ 
+2015 DeepMind, \acrshort{dqn}, V. Mnih\\
+2015 \acrshort{ddpg} Agent,Lillicrap\\
+2017 \acrshort{ppo} Agent, J. Schulman\\
+2018 \acrshort{sarsa}, Sutton R.S\\ 
 
 
 \newpage
@@ -443,14 +471,14 @@ Date:$3^{rd}$ \text{Feb,2024}
 \section*{Preface}
 \addcontentsline{toc}{section}{Preface}
 \justifying
-Recent times RL has gained significant popularity in simulating competitive games. The ability to reinforcement learn patterns through  deep artificial neural network is an essential components of an  intelligent force.:
+Recent times RL has gained significant popularity in simulating competitive games. The ability to reinforcement learned patterns through  deep artificial neural network is an essential components of an  intelligent force.:
 \begin{enumerate}
     \item Deep learning is therefore an ideal choice of so called "Intelligent military robots" which involve processing and fusion of data from different sources and historical databases of differential equation\index{differential equation} based combat modeling\index{combat modeling} \Gls{combat modeling}.
     \item Advance level of \acrlong{ai} (\acrshort{ai}) based Model Fitting
     \item Introduction of simple theorems, Notations, and logic of combat modeling.
     \item The glossary and Acronyms of most useful terms of combat modeling.
 \end{enumerate}
-This book is a beginner’s introduction to \Gls{Artificial Intelligence} based model fitting for generating simple equations which can also be used in combat analysis, defence planning or even on in any battle analysis. The book does not attempt to compile all modeling techniques and algorithm available in the open literature it tries to present those models which suits best with combat analysis. The goal is to keep all important historical pattern setting battles in a common place which can be shared as graphical and network presentations in the defense analyst.
+This book is a beginner’s introduction to \Gls{Artificial Intelligence} based model fitting for generating simple equations which can also be used in combat analysis, defence planning or even on in any battle analysis. The book does not attempt to compile all modeling techniques and algorithm available in the open literature it tries to present those models which suits best with combat analysis. The goal is to keep all important historical pattern setting battles in a common place which can be shared as graphical and network presentations in the defense analysis.
 \newline
 Happy reading!\newline
 
@@ -465,8 +493,8 @@ Date:$3^{rd}$ \text{Feb,2024}
 \section*{Summary}
 \addcontentsline{toc}{section}{Summary}
 \justifying
-Can \Gls{Autonomous Forces} be trained with Artificially Intelligence (AI) algorithms like \Gls{deep learning} from historical data and further be improved by the rules set by \Gls{Sun Tzu's Art of War} for developing a state-of-the-art system of planning and analysis of \Gls{Military Strategy}. The application of Machine learning (ML) algorithms are general practice for extracting meaningful models from the data. ML could be unsupervised, supervised, or reinforcement learning. This book explores deep learning neural networks for extracting model parameters for generating autonomous forces, Although our main focus is on the world's largest tank battle that is Battle of Kursk, we are also exploring other historical battle data of the world for validating the system.  
-The battle of Kursk between the Soviets and Germans is known to be the biggest tank battle in history. This book explores the two-dimensional-simplex tank and artillery data from the Kursk database for analyzing a class of discrete time homogeneous and heterogeneous Lanchester models. Under homogeneous form, the Soviet’s (or German’s) tank casualty is attributed to only the German’s (or Soviet’s) tank engagement. For heterogeneous form, the tank casualty is attributed to both tank and artillery engagements. For validating the models, different goodness-of-fit statistics are used for comparison. 
+Can \Gls{Autonomous Forces} be trained with Artificially Intelligence (AI) algorithms like \Gls{deep learning} from historical data and further be improved by the rules set by \Gls{Sun Tzu's Art of War} for developing a state-of-the-art system of planning and analysis of \Gls{Military Strategy}. The application of Machine learning (ML) algorithms are general practice for extracting meaningful models from the data. ML could be unsupervised, supervised, or reinforcement learning. This book explores deep learning neural networks for extracting model parameters for generating autonomous forces, Although our main focus is on the world's largest tank battle that is Battle of Kursk, we are also exploring other iconic historical battle data of the world for validating the system.  
+The battle of Kursk between the Soviets and Germans is known to be the biggest tank battle in the history. This book explores the two-dimensional-simplex tank and artillery data from the Kursk database for analyzing a class of discrete time homogeneous and heterogeneous Lanchester models. Under homogeneous form, the Soviet’s (or German’s) tank casualty is attributed to only the German’s (or Soviet’s) tank engagement. For heterogeneous form, the tank casualty is attributed to both tank and artillery engagements. For validating the models, different goodness-of-fit statistics are used for comparison. 
 \newpage
 % \stepcounter{page}
 
@@ -501,7 +529,7 @@ The battle of Kursk between the Soviets and Germans is known to be the biggest t
 % \vspace*{.01cm}
    \Large
  
-\textbf{ Deep Policy Agents: The Artificially Intelligent Deeply Learned from Historical Battle Data and Sun Tzu's The Art of War Autonomous Forces on the March   }
+\textbf{ Deep Neural Network Based Agents: \\The Artificially Intelligent Deeply Learned from Historical Battle Data and Sun Tzu's The Art of War Autonomous Forces on the March   }
 
 \newpage
 
@@ -521,7 +549,7 @@ The battle of Kursk\index{Kursk} between the Soviets and Germans is known to be 
 \end{abstract}
 
 \begin{keywords}
-Battle of Kursk\index{Battle of Kursk}, Homogeneous\index{Lanchester's! Homogeneous Model} , Heterogeneous Lanchester Model\index{Lanchester's! Heterogeneous Model}, Goodness-of-fit\index{Goodness-of-fit},  Sum-of-square residuals\index{Sum-of-square residuals}, Chi-square\index{Chi-square}, Kolmogorov Smirnov\index{Kolmogorov-Smirnov}.
+Battle of Kursk\index{Battle of Kursk}, Homogeneous\index{Lanchester's! Homogeneous Model} , Heterogeneous Lanchester Model\index{Lanchester's! Heterogeneous Model}, Goodness-of-Fit\index{Goodness-of-Fit},  Sum-of-Square Residuals\index{Sum-of-Square Residuals}, Chi-Square\index{Chi-Square}, Kolmogorov Smirnov\index{Kolmogorov-Smirnov}.
 \end{keywords}
 \newpage
 
@@ -529,11 +557,11 @@ Battle of Kursk\index{Battle of Kursk}, Homogeneous\index{Lanchester's! Homogene
 % Chapter 1: A short chapter that ends on page 1.
 
 \section{Introduction}
-During the past decades, many differential equation based models \autocite{HelmboldRehm:1991,Lanchester:1916,Osipov:1915,Weiss:1975,Schramm:2012} have gained significant importance for representing combat dynamics. These equations are widely used for modelling in warfare and representing the decrease in force levels over time commonly referred to as attrition\index{attrition} process.Lanchester in 1914 proposed a set of differential equations, which quantify the importance of force concentration on the battlefield. Many authors have subsequently modified his original work to represent combat dynamics in modern warfare. In the recent time AI-enabled warfare involving "Killer Robots\index{Killer Robots}" \autocite{lethalRobots} has forced the designer to change the visualization of combat model development from traditional statistical methods to more practical adaptive\index{adaptive} and heuristic\index{heuristic} approaches. In \autocite{Davis2022ArtificialIF} the authors have discussed how artificial intelligence (AI) could be used in political-military modeling, simulation, and wargaming of conflicts with nations having weapons of mass destruction\index{weapons of mass destruction} and other high-end capabilities involving space, cyberspace, and long-range precision weapons. In reference \autocite{FATHM:2007}, we found that a fast large-scale theater model\index{theater model} combining ground to ground battle attrition with air-to-ground strikes has been developed using such models.The features of the Lanchester's Equation\index{Lanchester's ! Equation} that makes it suitable for analysis includes:
+During the past decades, many differential equation based models \autocite{HelmboldRehm:1991,Lanchester:1916,Osipov:1915,Weiss:1975,Schramm:2012} have gained significant importance for representing combat dynamics. These equations are widely used for modelling in warfare and representing the decrease in force levels over time commonly referred to as attrition\index{attrition} process.Lanchester in 1914 proposed a set of differential equations, which quantify the importance of force concentration on the battlefield. Many authors have subsequently modified his original work to represent combat dynamics in modern warfare. In the recent time AI-enabled warfare involving "Killer Robots\index{Killer Robots}" \autocite{lethalRobots} has forced the designer to change the visualization of combat model development from traditional statistical methods to more practical adaptive\index{adaptive} and heuristic\index{heuristic} approaches. In \autocite{Davis2022ArtificialIF} the authors have discussed how artificial intelligence (AI) could be used in political-military modeling, simulation, and \\wargaming of conflicts with nations having weapons of mass destruction\index{weapons of mass destruction} and other high-end capabilities involving space, cyberspace, and long-range precision weapons. In reference \autocite{FATHM:2007}, we found that a fast large-scale theater model\index{theater model} combining ground to ground battle attrition with air-to-ground strikes has been developed using such models.The features of the Lanchester's Equation\index{Lanchester's ! Equation} that makes it suitable for analysis includes:
 \begin{itemize}
   \item \textbf{\textit{Applicability}}:Lanchester models are widely used for historical battle analysis \autocite{Engel:1954}. Other than analysing human warfare Lanchester model have also been used for analysis of fights among social animals, market analysis \autocite{remnet:2016}.
   \item \textbf{\textit{Force Aggregation\index{Aggregation}}}: Lanchester models are found to be suitable for developing aggregated combat modelling using High Resolution Simulation Model\index{High Resolution Simulation Model}. In reality, actual historical combat data is not easily available and common practice is to develop High Resolution simulation data with detailed design. Various literature \autocite{Brackney:1959}, \autocite{Das:2007} \autocite{Das:2015} have demonstrated that estimating attrition rates from high-resolution simulation and using Lanchester model for linking the various resolution of different simulation model.
-  \item \textbf{\textit{Flexibility}}: Lanchester models are flexible for both homogeneous as well as heterogeneous situations.Lanchester models are used for theoretically consistent force aggregation and dis-aggregation in two dimensions \autocite{Taylor:1983,Hillestad:1995}.
+  \item \textbf{\textit{Flexibility}}: Lanchester models are flexible for both homogeneous as well as heterogeneous situations.Lanchester models are used for theoretically consistent force aggregation and \\dis-aggregation in two dimensions \autocite{Taylor:1983,Hillestad:1995}.
 \end{itemize}
 Regardless of credits of prior discovery, Lanchester's equations are used worldwide for calculating attrition rates. We propose an iterative parameter estimation algorithm for general form of the heterogeneous Lanchester's model as:
 \begin{equation} 
@@ -564,7 +592,7 @@ where
 
 
 Equations (1) and (2) involve unknown parameters $a_{i}$,$b_{i}$ ,$p_{i}$ and \(q_{i}\). A lot of work has been done to estimate these parameters using statistical estimation\index{estimation} methods like Least Square\index{Least Square}, Maximum Likelihood\index{Maximum Likelihood}, Bayes\index{Bayes}, Method of Moments\index{Method of Moments} \autocite{Das:2007,Das:2015} etc. These estimates are most suitable for homogeneous situation. In heterogeneous situations these estimation procedures fail. In this book we propose AI based generalized reduced gradient\index{generalized reduced gradient} (\acrshort{grg}) algorithm \autocite{Hashemi2020PerformanceCO,Luo2022GeneralizedDL} which is alternatively solved through Deep learning Neural Network\index{Deep learning Neural Network}.  We are generally acquainted with two forms of these equations for homogeneous weapon engagement (when \(i\). Lanchester linear law in which \(p_{i}=q_{i}=1\) and force ratios remain equal if
-\(a_{i}.X_{i_{0}^{}}^{p_{i}}=b_{i}.Y_{i_{0}^{}}^{q_{i}}\). Lanchester's linear law\index{Lanchester's!linear law} is interpreted as a model from a series of one-on-one duel between homogeneous forces and this law describes combat under "ancient conditions". The equation is also considered a good model for area fire weapons, such as artillery. Lanchester square law\index{Lanchester's ! square law} in which , that is, force ratios remain equal if  applied to modern warfare in which both sides are able to aim their fire or concentrate forces.
+\(a_{i}.X_{i_{0}^{}}^{p_{i}}=b_{i}.Y_{i_{0}^{}}^{q_{i}}\). Lanchester's linear law\index{Lanchester's!linear law} is interpreted as a model from a series of one-on-one duel between homogeneous forces and this law describes combat under "ancient conditions". The equation is also considered a good model for area fire weapons, such as artillery. Lanchester square law\index{Lanchester's!square law} in which , that is, force ratios remain equal if  applied to modern warfare in which both sides are able to aim their fire or concentrate forces.
 
 On integrating equation (1) and (2) we obtain the state equation:
 \begin{equation} 
@@ -611,15 +639,17 @@ Turkes \autocite{Turkes:2000} extended the previous work for the validation of L
 Lucas and Turkes \autocite{LukasTurkes:2004} used a new approach to find the optimal parameters for fitting Lanchester models on the data of Battles of Kursk and Ardennes. They have gained an understanding of how well various parameter combinations explain the battles. They have found that variety of models fits the data.They concluded that none of the basic laws (i.e. square, linear and logarithmic) fit the data correctly and raises the question of utility of basic Lanchester model for combat modelling. They also suggested finding new ways to model the aggregated attrition process to provide a good-fitting Lanchester model.
 
 US Army’s Colonel Trevor N. Dupuy \autocite{dupuy1990evolution} discussed about different weapon system in his book about the Evolution of Weapons and Warfare (1990) which had evolved from 2000 BCE onwards till the Cold War and their tactical impact on combat. Despite its Western bias, the book is good for detailed description of the military hardware which modern Europe produced. Eminent author K Roy \autocite{Roy2022} described a global history of warfare from slings to drones also includes discussion on insurgency, civil war, sieges, skirmishes, ambushes and raids.
+Petro \autocite{6928214} was introduced to develop multi-agent system for historical warfare which is useful for generating tactics of different kinds of military forces. It can be at soldier or at regimental level. Modeling of Various types of military forces namely Tatar riders, line infantry, Heussars, Reiters were introduced in this paper. 
+Similarly WarAgent \autocite{hua2024war} is an example of \acrshort{llm} (\Gls{Large Language Model}) based \acrshort{mas} (\Gls{Multi Agent System}) for simulation of historical events.
 
 	The main aim of this book is to fit Lanchester Model based on Kursk data.For that we require to estimate attrition rates and exponent parameters. There are several approaches to estimate the parameters. We shall consider two common and rational procedures namely, Least Square Estimation (\acrshort{lse}) and Maximum Likelihood Estimation (\acrshort{mle}). These two estimation procedures will be applied by AI techniques like Deep Learning. The authors in \autocite{lillicrap2019continuous} have demonstrated Deep Reinforcement Learning (\acrshort{drl}) AI techniques for solving complex problem, our autonomous forces are configured with this technique. DRL is an iterative optimization process. Our autonomous force higher commanders are established on the logic of \acrlong{ddpg} ($DDPGAgent$) \autocite{lillicrap2019continuous}. These\\ $DDPGAgents$ are represented by {actor-critic} relationship where Actor is $\pi($S$,\theta)$, for observations $S$ with parameter $\theta$ and critic $Q(\phi,$S$,$A$)$ with parameter, observation and action are $\phi$,$S$,$A$ respectively. The parameter $\theta$ is periodically updated for optimal value of long term reward function that produces the target Actor $\phi(S,\theta_t)$ and target critic $Q(\phi_t,$S$,$A$)$. In the present book the observations are historical battle data, actions are mathematical functions formulated from "Art of the War"\autocite{tzu2020art},the parameters $\theta$ estimated are attrition rate coefficients, exponents parameters which are being estimated through Deep Learning Neural Network, the critic parameters $\phi_t$ are estimated from the same data set with strategic inputs and rules from the "Art of the War". The long term reward function is designed from the GOF measures as defined in subsequent sections.
  The observations sets are Soviet's and German's Tank, APC, Arty Gun , Infantry. That is {1 * 8}, these datasets are discrete in nature. The actions are casualties in these components which is recorded as discrete elements. To create the discrete and continuous observation and action spaces for the \acrshort{rl}, \Gls{rlNumericSpace} and \Gls{rlFiniteSetSpace} are used.   
 
  
 
-In the next section we have discussed in detail the mathematical formulations of homogeneous and heterogeneous situations. We have seen in Bracken \autocite{Bracken:1995}, Fricker \autocite{Fricker:1998} , Clemens \autocite{Clemens:1997} , Turkes\autocite{Turkes:2000}, Lucas \autocite{LukasTurkes:2004} that LSE method have been applied for evaluating the parameters for fitting the homogeneous Lanchester equations to the historical battle data.The MLE method \autocite{rohatgi2015introduction,Taylor:1983} has not been explored particularly for fitting the historical battle data till date. Also only one measure i.e. Sum-of-squared-residuals (SSR) has been explored for measuring the Goodness-of-fit (\acrshort{gof}). The main objective of this study is to assess the performance of the MLE approach for fitting homogeneous as well as heterogeneous Lanchester equations to the Battle of Kursk. Various measures of GOF \autocite{Agustino:1986} viz. \acrlong{ks}, \acrlong{chisquare} and $R^2$ have been computed for comparing the fits and to test how well the model fits the observed data. Applying the various GOF measures considering the artillery strength and casualties of Soviet and German sides from the Kursk battle data of World War-II validates the performance of MLE technique.Section 2 presents in brief the \\overview of the battle of Kursk. Section 3 describes the mathematical formulation of likelihood estimation in case of both homogeneous as well as heterogeneous situations. Section 4describes the Tank and Artillery data of Battle of Kursk and discusses the methodology for implementing the proposed as well as other approaches. Also, this section contains a performance appraisal of the MLE using various GOF measures. Section 5analyses the results after observing various tables and figures and discusses how well the MLE fits the data. Section 6 summarizes the important aspects of the book.
+In the next section we have discussed in detail the mathematical formulations of homogeneous and heterogeneous situations. We have seen in Bracken \autocite{Bracken:1995}, Fricker \autocite{Fricker:1998} , Clemens \autocite{Clemens:1997} , Turkes\autocite{Turkes:2000}, Lucas \autocite{LukasTurkes:2004} that LSE method have been applied for evaluating the parameters for fitting the homogeneous Lanchester equations to the historical battle data.The MLE method \autocite{rohatgi2015introduction,Taylor:1983} has not been explored particularly for fitting the historical battle data till date. Also only one measure i.e. Sum-of-squared-residuals (SSR) has been explored for measuring the Goodness-of-fit (\acrshort{gof}). The main objective of this study is to assess the performance of the MLE approach for fitting homogeneous as well as heterogeneous Lanchester equations to the Battle of Kursk. Various measures of GOF \autocite{Agustino:1986} viz. \acrlong{ks}, \acrlong{chisquare} and $R^2$ have been computed for comparing the fits and to test how well the model fits the observed data. Applying the various GOF measures considering the artillery strength and casualties of Soviet and German sides from the Kursk battle data of World War-II validates the performance of MLE technique.\\Section 2 presents in brief the overview of the battle of Kursk. Section 3 describes the mathematical formulation of likelihood estimation in case of both homogeneous as well as heterogeneous situations. Section 4describes the Tank and Artillery data of Battle of Kursk and discusses the methodology for implementing the proposed as well as other approaches. Also, this section contains a performance appraisal of the MLE using various GOF measures. Section 5analyses the results after observing various tables and figures and discusses how well the MLE fits the data. Section 6 summarizes the important aspects of the book.
 \newpage
-\section{Iconic Historical Battles}
+\section{Iconic Battles}
 The Battle of Trafalgar was a naval engagement that took place on 21 October 1805 between the British Royal Navy and the combined fleets of the French and Spanish Navies during the War of the Third Coalition (August–
 December 1805) of the Napoleonic Wars (1803– 1815)\cite{BattleOfTrafalgar}.
 
@@ -636,7 +666,8 @@ The Germans started the Battle of Kursk on July 4, 1943 on the southern half of 
 Wehrmacht attacked. The Germans countered with their own planned barrages shortly thereafter 
 and seized the initiative on both fronts. Soviet General Rokossovsky redeployed his reserves on 
 the night of July 5 in order to attack the following day. The divisions of the 17th and 18th Guards 
-Rifle Corps, with support from the 3rd, 9th, 16th, and 19th Tank Corps, were beginning offensive operations at 5:30 a.m. on July 6 in support of 13th Army. July 6 were considered as worst single day of CITADEL for German tank losses.On 7th July the German attack with armour forces in the northern and northeast side and captured the village Lutschki and continued advancing towards the village of Tetrevino against the very strong Soviet infantry and armor battle. By evening July 7 the Germans were ableto capture the village Tetrevino. On 8th July the German attacked with armour forces and barely captured the Teploye village. The Soviet counterattacked and recapture the lost Teploye village.The soviet defended very well on that day although they lost 315 tanks on that day in comparison to 108 tank loss of the Germans. The German forces wanted to develop a sharp wedge towards Kursk via Oboyan village. The German forces attacked with more than 500 tanks.The soviet forces defended the Oboyan with sophisticated artillery guns. Despite the strong defense the Germans were able to foothold over the Pena River. During the period of July 7-9both the sides had suffered largest number of tank losses. Due to this reason the Germans planned to attack from less resistance Prokorovka side. After changing the direction of the attack the German reached and seized the village of Novoselovka. The Soviets understood the German's plan and they started using their reserve units. But despite of that the Germans were able to break through (\Gls{Breakthrough}) the Soviet defenses by evening of the July 10. The German intention at this point was to cross the river Psel to the extent of as many as troops and vehicles are possible. The Germans were able to seize a bridge. The engagement was at this point between artillery and tank.Both the forces were preparing for the battle of Prokhorovka. The Battle of Prokhorovka was the decisive phase of the Battle of Kursk. The Soviets started with artillery defense and later it turns out to be totally tank against tank meeting engagement (\Gls{Meeting Engagement},). The German tanks had to face minefield as well as well defended Soviet anti-tank weapons\Gls{Delaying}, (\Gls{Delaying},). The resulting titanic battle was a tactical draw (\Gls{Stalemate},). The Germans lost 98 tanks against 414 Soviet tank losses. Hitler called off the battle. The losses from the fighting over July 12 and 13 were extensive on both sides. In KUTUZOV there was a heavy armour engagement between the two forces. The German forces destroyed 117 Soviet tanks. The Soviets also damaged 57 German tanks.The battle on Prokorovka still continued on 14th July. The German planned an offensive operation named operation Roland. It started on July 14. The aim was to destroy the Soviet armor reservoirs\\(\Gls{Deliberate Defense}). The German armor units fought with the artillery forces that were defending the armor reservoirs of the Soviet in the southern part of the Prokorovka. Several tactical positions\\ (\Gls{Fortified Defense}) were captured by the German forces. On this day the Germans were capable of performing minor offensive operations and they were launching attacks to form the Gostishchevo-Liski pocket. Hitler redirected it back to Isyum on July 16. According to the various war analysts it is being considered that because of Hitler's decision, von Manstein lost the availability of a powerful mobile formation that could have been very useful in the battle. During this time most of the engagements were between German infantry and Soviet tanks. Most of the damage was suffered by the Soviet because they were not equipped with modern antitank weapons that can deal effectively with the Soviet armour. The Soviets launched their counteroffensive along the Mius River on July 17. The Southwestern Front, commanded by Colonel General Tolbukhin, attacked the heavily fortified Mius River line defenses(\Gls{Fortified Defense}). The Soviet counter attack was known as operation RUMANTSYEV.
+Rifle Corps, with support from the 3rd, 9th, 16th, and 19th Tank Corps, were beginning offensive operations at 5:30 a.m. on July 6 in support of 13th Army. July 6 were considered as worst single day of CITADEL for German tank losses.On 7th July the German attack with armour forces in the northern and northeast side and captured the village Lutschki and continued advancing towards the village of Tetrevino against the very strong Soviet infantry and armor battle. By evening July 7 the Germans were ableto capture the village Tetrevino. On 8th July the German attacked with armour forces and barely captured the Teploye village. The Soviet counterattacked and recapture the lost Teploye village.The soviet defended very well on that day although they lost 315 tanks on that day in comparison to 108 tank loss of the Germans. The German forces wanted to develop a sharp wedge towards Kursk via Oboyan village. The German forces attacked with more than 500 tanks.The soviet forces defended the Oboyan with sophisticated artillery guns. Despite the strong defense the Germans were able to foothold over the Pena River. During the period of July 7-9both the sides had suffered largest number of tank losses. Due to this reason the Germans planned to attack from less resistance Prokorovka side. After changing the direction of the attack the German reached and seized the village of Novoselovka. The Soviets understood the German's plan and they started using their reserve units. But despite of that the Germans were able to break through (\Gls{Breakthrough}) the Soviet defenses by evening of the July 10. The German intention at this point was to cross the river Psel to the extent of as many as troops and vehicles are possible. The Germans were able to seize a bridge. The engagement was at this point between artillery and tank.Both the forces were preparing for the battle of Prokhorovka. \\
+The Battle of Prokhorovka was the decisive phase of the Battle of Kursk. The Soviets started with artillery defense and later it turns out to be totally tank against tank meeting engagement (\Gls{Meeting Engagement},). The German tanks had to face minefield as well as well defended Soviet anti-tank weapons\Gls{Delaying}, (\Gls{Delaying},). The resulting titanic battle was a tactical draw (\Gls{Stalemate},). The Germans lost 98 tanks against 414 Soviet tank losses. Hitler called off the battle. The losses from the fighting over July 12 and 13 were extensive on both sides. In KUTUZOV there was a heavy armour engagement between the two forces. The German forces destroyed 117 Soviet tanks. The Soviets also damaged 57 German tanks.The battle on Prokorovka still continued on 14th July. The German planned an offensive operation named operation Roland. It started on July 14. The aim was to destroy the Soviet armor reservoirs\\(\Gls{Deliberate Defense}). The German armor units fought with the artillery forces that were defending the armor reservoirs of the Soviet in the southern part of the Prokorovka. Several tactical positions\\ (\Gls{Fortified Defense}) were captured by the German forces. On this day the Germans were capable of performing minor offensive operations and they were launching attacks to form the Gostishchevo-Liski pocket. Hitler redirected it back to Isyum on July 16. According to the various war analysts it is being considered that because of Hitler's decision, von Manstein lost the availability of a powerful mobile formation that could have been very useful in the battle. During this time most of the engagements were between German infantry and Soviet tanks. Most of the damage was suffered by the Soviet because they were not equipped with modern antitank weapons that can deal effectively with the Soviet armour. The Soviets launched their counteroffensive along the Mius River on July 17. The Southwestern Front, commanded by Colonel General Tolbukhin, attacked the heavily fortified Mius River line defenses(\Gls{Fortified Defense}). The Soviet counter attack was known as operation RUMANTSYEV.
 
 The Battle of Iwo Jima (19 February – 26 March 1945) was a major battle in which the United States Marine Corps (USMC) and United States Navy (USN) landed on and eventually captured the island (fortified defence) of Iwo Jima from the Imperial Japanese Army (IJA) during World War II. The American invasion, designated Operation Detachment, had the purpose of capturing the island with its two airfields: South Field and Central Field\cite{BattleOfIJ}.
 
@@ -738,11 +769,11 @@ The Kursk Data Base (\acrshort{kdb}) is developed by Dupuy Institute (DPI) and i
 % \setcounter{table}{1}
 % \footnotesize
 \begin{sidewaystable}
- 
+ \centering
 
 \tiny
 \caption{Battle of Iwo Jima\\}
-\vspace{0.5cm}
+\vspace{0.5 cm}
 \tiny
 
 % \caption{Long table caption.\label{long}}
@@ -787,7 +818,7 @@ $Time$ & $USA$ & $JAP$	& $Time$	& $USA$ & $JAP$	& $Time$ & $USA$	& $JAP$ \\
 \end{sidewaystable}
 
 \begin{table}
- 
+
 
 \tiny
 \caption{Battle of Atlantic(U-boats losses \cite{hughes1977battle})\\}
@@ -933,6 +964,7 @@ $Point$ & $\delta$G & $\delta$A	& G	& A & r \\
 \end{table}
 
 \begin{sidewaystable}
+\centering
  \tiny
 \caption{Battle of Trafalgar\\}
 \vspace{0.1cm}
@@ -968,7 +1000,7 @@ $B$ & $F$ & $S$	& $B$	& $F$ & $S$	& $B$ & $F$	& $S$ &$Win$ \\
 
 \begin{sidewaystable}
  
-
+\centering
 \tiny
 \caption{Daily Soviet and Germans on hand and losses data for tanks and artillery from Kursk Battle}
 \tiny
@@ -1056,9 +1088,9 @@ The basic idea of using GRG algorithm is to quickly find optimal parameters that
       &+(.953){y_1}^{.138}{x_2}^{.136}\\
 \end{split}
 \end{equation}
-	
-As the data for the first day is extremely low, we drop it since it will pose a problem in the computation of the likelihood and SSR function.Also, the extremely low casualty levels on the first day represent large outliers; thus, including the data of the first day affects the outcome to a great extent. Thus, the first day was dropped in fitting the data to the models. This approach is also justified by the historical account of the battle of Kursk, because the fight did not begin until July 5, the second day of the battle. Thus, dropping the data for the first day and dividing the remaining 14 days data into five phases, the total number of optimal parameters with each day as single phase is 102. This is a much better fit than any of the homogeneous model because both the residual as well as the likelihood are optimized. Log-likelihood is calculated using equation (7) and is maximized separately for each of the five phases. Let $t$ denote the days, then the division is made as $(t_2-t_3), (t_4-t_6), (t_7-t_8), (t_9-t_{11})$, and $(t_{12}-t_{15})$.Fitting the model over multiple phases results in a better overall fit because there are additional parameters to explain the variation in casualties. The model has been improved from partitioning the battle into 14 phases. Each day of the battle is treated as mini-battle.
-For the purpose of comparing models, $R^2$ value is calculated along with the Sum of squared residuals (SSR). $R^2$ value is calculated as:
+As the data for the first day is extremely low, we drop it since it will pose a problem in the computation of the likelihood and SSR function.Also, the extremely low casualty levels on the first day represent large outliers; thus, including the data of the first day affects the outcome to a great extent. Thus, the first day was dropped in fitting the data to the models. This approach is also justified by the historical account of the battle of Kursk, because the fight did not begin until July 5, the second day of the battle. Thus, dropping the data for the first day and dividing the remaining 14 days data into five phases, the total number of optimal parameters with each day as single phase is 102. This is a much better fit than any of the homogeneous model because both the residual as well as the likelihood are optimized. Log-likelihood is calculated using equation (7) and is maximized separately for each of the five phases. Let $t$ denote the days, then the division is made as $(t_2-t_3), (t_4-t_6), (t_7-t_8), (t_9-t_{11})$, and $(t_{12}-t_{15})$.Fitting the model over multiple phases results in a better overall fit because there are additional parameters to explain the variation in casualties. The model has been improved from partitioning the battle into 14 phases. Each day of the battle is treated as mini-battle. For the purpose of comparing models, $R^2$ value is calculated along with the Sum of squared residuals (SSR). $R^2$ value is calculated as: 
+
+
 \tiny
 \begin{equation}\label{eq15}
 \begin{split}
@@ -1075,7 +1107,7 @@ KS=&{max}_{1\leq{t^*}\leq30}[F(\hat{\Dot{e_{t^*}}})-\frac{t^*-1}{30},\\
 &\frac{t^*}{30}-F(\hat{\Dot{e_{t^*}}})]    
 \end{split}
 \end{equation}
-where $F(\hat{\Dot{e_{t^*}}})$ is the cumulative distribution function of the estimated error between the observed losses and the estimated losses for both sides. Chi-Square  (${\chi}^2$) is another measure of Goodness-of-fit. Chi-Square is given as:
+where $F(\hat{\Dot{e_{t^*}}})$ is the \index{Cumulative ! Distribution Function} of the estimated error between the observed losses and the estimated losses for both sides. Chi-Square  (${\chi}^2$) is another measure of Goodness-of-fit. Chi-Square is given as:
 \begin{equation}
 \begin{split}
     \chi^2=&\sum_{t=1}^{14}\frac{({\Dot{x}}_{i^{*}_t}-\hat{\Dot{x}}_{i^{*}_t})^2}{\hat{\Dot{x}}_{i^{*}_t}} \\+&\sum_{t=1}^{14}\frac{({\Dot{y}}_{i^{*}_t}-\hat{\Dot{y}}_{i^{*}_t})^2}{\hat{\Dot{y}}_{i^{*}_t}}  
@@ -1196,7 +1228,7 @@ dividing above equations we have
 \end{equation}
 \newpage
 \subsection{Theorem-1:\\Art of Maneuvering}
-Consider a combat between autonomous $FORCE_1$ ($n_1| OLI_1,m_1,v_1,l_1,t_1,mo_1,p_1$) and $FORCE_2$ ($n_2| OLI_2,m_2,v_2,l_2,t_2,mo_2,p_2$) where $m_i,v_i,l_i,t_i,mo_i,p_i $$\in {R}$\\
+Consider a combat between autonomous $FORCE_1$ ($n_1| OLI_1,m_1,v_1,l_1,t_1,mo_1,p_1$) and \\$FORCE_2$ ($n_2| OLI_2,m_2,v_2,l_2,t_2,mo_2,p_2$) where $m_i,v_i,l_i,t_i,mo_i,p_i $$\in {R}$\\
 \begin{equation}
 \begin{split}
  \Dot{CP_1}=&-a.CP_2\text{  and  }\Dot{CP_2}=-b.CP_1 \\&\text{(if direct fire mode)} \\
@@ -1309,13 +1341,13 @@ Taking logarithms on both sides we have
 \end{equation}
 \begin{equation} 
 \begin{split}
- &log{CP_2(l,t)}  =log{(n_2(l,t))}+log(1/d)\\&+log{(OLI_2)}+log{(m_2(l,t))}\\
+ &log{CP_2(l,t)}  =\\&log{(n_2(l,t))}+log(1/d)\\&+log{(OLI_2)}+log{(m_2(l,t))}\\
 &+log{(v_2(l,t))}+log{(2_1)}\\&+log{(t_2)}+log{(mo_2)}\\&+log{(po_2(l,t))}+
  log{(W_{def}(l,t))}
 \end{split}
 \end{equation}
 Collect samples from various locations 
-$CP(x^1,y^1,t),CP(x^1,y^1,t),\dots,\\CP(x^n,y^n,t^n)\in F_\phi$ Carefully compare the opposing Army and Conceal Tactical Dispositions: that means we have to camouflage the center location of the CP's and the distribution pattern or distribution dispersion.
+\\$CP(x^1,y^1,t),CP(x^1,y^1,t),\dots,\\CP(x^n,y^n,t^n)\in F_\phi$ Carefully compare the opposing Army and Conceal Tactical Dispositions: that means we have to camouflage the center location of the CP's and the distribution function or distribution dispersion.
 \end{itemize}
 \newpage
 \subsection{Theorem-2:\\Art of Self Possession}
@@ -1326,7 +1358,7 @@ The AOW of modern warfare is mainly evolved on three factors of conflict dynamic
 \begin{enumerate}
     \item Determine the goals $({G_1,G_2,...,G_n})$ which are connected as network of systems like a {\index{Mosaic Warfare}} \textit{\Gls{Mosaic Warfare}}. 
     \item Determine the time to reach near the Goal or at time when one wants to achieve the goal i.e. time $(t_1,t_2,...,t_n)$.
-    \item What is the potential to achieve the Goal ${G_i}$ at time $t_i$ i.e. ${CP(G_i,t_i)}$.
+    \item What is the potential to achieve the Goal ${G_i}$ at time $t_i$ i.e.\\ ${CP(G_i,t_i)}$.
     
 \end{enumerate}
 
@@ -1351,7 +1383,7 @@ then\\
   &\frac{1}{\sqrt(2.\pi).\sigma.|\sum|)}\\&exp(-\frac{1}{2}((x-\mu){{\sum^{-1}}}(x-\mu)^{'} ))\\&=CP  
 \end{split} 
 \end{equation}
-We can visualize this function as tactics and overall area under the curve as strategies. so the $CP(G_i,t_i)$ is not fixed and it varies with time. The overall distribution pattern of the tactics and strategies are represented by the theoretical distribution pattern of the equation (45).As we see in the curve all the situation or tactics are different from each other. But it can be imagined that situation 3 as well as situation 4 is mirror (inverted) image of situation 5 and so on. What remain constant is the middle situation 1. Although these situations are imagined as ideal theoretical dimension but in real practical time there will be not exactly with the theoretical dimensions . So in actual real condition the situation will be governed by the Goal and time. So in a practical sense we can analyse a terrain from the GIS and we can tag different situation with time variation. That's why San Tzu is imagining how the water flows on the ground . As water changes its direction and shape according to the terrain the potential army will have no fixed dimensions, it will change according to the terrain. So the efficient Commander has to decide three things to maintain his force as free flowing. 
+We can visualize this function as tactics and overall area under the curve as strategies. so the $CP(G_i,t_i)$ is not fixed and it varies with time. The overall distribution function of the tactics and strategies are represented by the theoretical distribution function of the equation (45).As we see in the curve all the situation or tactics are different from each other. But it can be imagined that situation 3 as well as situation 4 is mirror (inverted) image of situation 5 and so on. What remain constant is the middle situation 1. Although these situations are imagined as ideal theoretical dimension but in real practical time there will be not exactly with the theoretical dimensions . So in actual real condition the situation will be governed by the Goal and time. So in a practical sense we can analyse a terrain from the GIS and we can tag different situation with time variation. That's why Sun Tzu is imagining how the water flows on the ground . As water changes its direction and shape according to the terrain the potential army will have no fixed dimensions, it will change according to the terrain. So the efficient Commander has to decide three things to maintain his force as free flowing. 
 Similarly this flow of water like force is dependent on the season also. Therefore in a particular time what should be the goal of today may not be important for tomorrow. Similarly the potential to achieve the goal at time $t_i$ may not be equal to the required potential to achieve the Goal at time $t_j$. The art of husbanding One's strength is first determine the correct Goal, and if the Goal is same to both the sides then one may try to achieve the goal before the opponents. And to achieve the goal before the opponent the potentiality also has to be increased or sufficiently large to well feed the force. This is the art of husbanding one's strength.
 
 The density function is the tactics and its total area is the overall strategies. Do not repeat the tactics these tactics are governed by the plan is dependent on $l$ and $t$. So a particular plan is just the realization during these period. So the $\hat{l}$ and $\hat{t}$ should not be repeated $l$  and $t$ are $\in {L}$,${R}^2$. Military tactics are like Unto water. So strike on weak, $Foe \equiv Ground$ , $Water \equiv Soldier$. As water has no constant shape war has no constant shape.Heaven born leader modify his tactics in relation to his desire. Earth, metal and planet are not important what is important is the seasonal changes of water a they one season gives way to the another season. this book uses the concept of Art of War \autocite{tzu2020art} for establishing the above mathematical co notations.
@@ -1403,7 +1435,7 @@ Consider the battle
   &\Dot{CP_1}=Af(CP_1)+Bg(CP_2),\\&\Dot{CP_2}=Cf(CP_2)+Dg(CP_1)  
 \end{split}
 \end{equation}
-being $ABCD$ $\in {R}$ and iid random variables with $N(0,1)$ Gaussian Distribution and where $f$ and $g$ are smooth real function such that $f(0)=g(0)=0$ then the probability that it does not have periodic orbits is greater than or equal to $\frac{1}{2}$. 
+being $ABCD$ $\in {R}$ and iid random variables with $N(0,1)$ \index{Gaussian! Distribution Function} and where $f$ and $g$ are smooth real function such that $f(0)=g(0)=0$ then the probability that it does not have periodic orbits is greater than or equal to $\frac{1}{2}$. 
 Equivalently, the probability of having some limit cycles is smaller than or equal to $\frac{1}{2}$.
 then:
 
@@ -1454,7 +1486,7 @@ In all the cases , each limit cycle is counted with its multiplicity.
 
 \section{Discussion}
 Figures 2 and 3 show the graphs of Soviet and German Tank losses along with the losses estimated through maximum likelihood approach. In this model a single set of parameters are estimated for representing the entire 14 days of the battle.Figures 4 and 5 show the performance of the same model when entire data set is divided into 5 phases. From these figures, it is apparent that fitting the models with division into 5 phases resulted in a much better fit.Figures 6 and 7 show the further improvement in the data set by dividing it into 14 phases where each day is considered as a mini battle. Further, the total losses are divided into two components: Losses due to tank and Losses due to Artillery. The overall SSR and likelihood values are functions of $p_i$’s and $q_i$’s. Figures 8 and 9 shows the 3D surfaces and contour plots of SSR as a function of $p_1$, $q_1$ and $p_2$, $q_2$ respectively.From these figures, we can see that the minimum SSR zone is represented by contours of $1.5E+5$ and $2.5E+5$. Using a grid search in this zone, the best or optimal fit is obtained at $p_1=.129$, $q_1=.404$, $p_2=.138$, $q_2=.136$ with SSR $1.19E+5$. The $a_1$, $b_1$, $a_2$, $b_2$ values corresponding to the optimal fit are\\ $1.14, 0.70, 0.90, 0.95$ respectively.Figures 10 and 11 shows the surface and contour plots of likelihood as a function of $p_1$, $q_1$ and $p_2$, $q_2$ respectively. From these figures, we can see that the zone of maximum likelihood is represented by contours of $6.0E+3$ and $5.0E+3$ with MLE $5.11E+3$.Using a grid search in this zone, the best or optimal fit is obtained at $p_1=.21$, $q_1=.28$, $p_2=.02$, $q_2=.04$. The $a_1$, $b_1$, $a_2$, $b_2$ values corresponding to the optimal fit are $0.99, 0.88, 0.89, 0.96$ respectively.
-Table 2 shows the results of Bracken \autocite{Bracken:1995}, Fricker \autocite{Fricker:1998} , Clemen \autocite{Clemens:1997}  and MLE approaches applied on the tank versus tank and artillery data under heterogeneous situation. This table shows the KS statistic for MLE (with 14 divisions) is 0.08674, which is less than any other estimation methods implying that the method of MLE fits better as compared to the other methods. Also, $R^2$ is a measure of goodness of fit. Larger values of $R^2$ implies a good fit to the data. The $R^2$ value of MLE (with 14 divisions) is1. For comparing the efficiency of the different approaches, the root mean square error (\acrshort{rmse}) criteria is used. The RMSE of MLE with 5 divisions is 88.13 and the RMSE of MLE with 14 divisions is .0005, which is found to be the minimum.The RMSE of Clemen’s Newton-Raphson Iteration model is 116.19, which is found to be the maximum. Therefore, efficiency(E) is measured with respect to the RMSE of the MLE with 14 divisions. Thus, the E for MLE is maximum i.e. equal to 1 and E of Clemen’s model is minimum i.e. equal to $4.30E-06$. If the comparison is made among Bracken's, Fricker's and Clemens approaches, we can say that the Bracken approach is better. However, in all the cases the MLE outperforms other approaches. Based on all the GOF measures, it can be concluded that MLE provides better fits.
+Table 2 shows the results of Bracken \autocite{Bracken:1995}, Fricker \autocite{Fricker:1998} , Clemen \autocite{Clemens:1997}  and MLE approaches applied on the tank versus tank and artillery data under heterogeneous situation. This table shows the KS statistic for MLE (with 14 divisions) is 0.08674, which is less than any other estimation methods implying that the method of MLE fits better as compared to the other methods. Also, $R^2$ is a measure of goodness of fit. Larger values of $R^2$ implies a good fit to the data. The $R^2$ value of MLE (with 14 divisions) is1. For comparing the efficiency of the different approaches, the root mean square error (\acrshort{rmse}) criteria is used. The RMSE of MLE with 5 divisions is 88.13 and the RMSE of MLE with 14 divisions is .0005, which is found to be the minimum.The RMSE of\\ Clemen’s Newton-Raphson Iteration model is 116.19, which is found to be the maximum. Therefore, efficiency(E) is measured with respect to the RMSE of the MLE with 14 divisions. Thus, the E for MLE is maximum i.e. equal to 1 and E of Clemen’s model is minimum i.e. equal to $4.30E-06$. If the comparison is made among Bracken's, Fricker's and Clemens approaches, we can say that the Bracken approach is better. However, in all the cases the MLE outperforms other approaches. Based on all the GOF measures, it can be concluded that MLE provides better fits.
 	In the present research we just demonstrate that if it is possible for mixing two forces it is also applicable for more than two forces. The number of parameters to be estimated increases fourth folded for mixing one additional force. With the estimated parameters, we computed the casualty due to tank component and casualty due to artillery component (See Table 3).When the 14 days Battle data is considered without any division, $a$ and $b$ parameters are significantly small and $a_1>b_1$ which implies German tanks were more effective than Soviet tanks.Similarly, when we compare $a_2$ against $b_2, b_2>a_2$ which implies Soviet artillery were more effective than German artillery. 
 Table 4 shows maximised log-likelihood values with divisions into 14 phases where each day is treated as a mini-battle.Table 3 shows the optimal parameters of heterogeneous Lanchester model with an $R^2$ of 1, RMSE of 0.0005, chi-square of 1.9E-5, SSR of 3.3E-6 and MLE of 13202. The parameters are obtained from maximum likelihood estimation of heterogeneous Lanchester model of tank and Artillery data (table 1) from Kursk Database with each day as single phase. The GRG algorithm is applied for maximizing the likelihood function given in equation (9).Also, the parameter estimates $a_i, b_i, p_i, q_i$ are given corresponding to the maximised log-likelihood values with divisions.From this table we can see that the patterns of the parameters for each day of the battle are same for both the sides. In addition the tank component  parameters are seen to be playing major role in the entire duration of the battle. Out of 14 days, 10 days the tank component parameters came out to be the maximum.That’s why the result justified the Battle of Kursk and was correctly termed as the largest tank battle in the history.
 \newpage
@@ -1465,6 +1497,7 @@ Although mathematical formulations are well established for heterogeneous Lanche
 % \begin{table}[]
 
 \begin{sidewaystable}
+\centering
 % \begin{longtable}[c]{| c | c |}
 \tiny
 \caption{Comparison of different estimation methods}
@@ -1500,6 +1533,7 @@ Although mathematical formulations are well established for heterogeneous Lanche
 % \end{table}
 
 \begin{sidewaystable}
+\centering
 % \begin{longtable}[c]{| c | c |}
 \tiny
 \caption{Continue...Comparison of different estimation methods}\label{table}
@@ -1536,6 +1570,7 @@ Although mathematical formulations are well established for heterogeneous Lanche
 
 
 \begin{sidewaystable}
+\centering
 \tiny
 %\centering
 \caption{Maximization of likelihood estimation with divisions from homogeneous tank against tank data of Kursk battle. }
@@ -1559,6 +1594,7 @@ Phase 4	&2168.54	&1.0221	&0.8939	&0.2793	&0.3483\\
 \end{sidewaystable}
 
 \begin{sidewaystable}
+\centering
 \tiny
 %\centering
 \caption{The Parameters of Heterogeneous Lanchester Model. The parameters are obtained from maximum likelihood estimation from heterogeneous tank against tank and artillery data of Kursk battle with each day as single phase.}
@@ -1601,6 +1637,7 @@ Phase XIV &297.3759 &1.550 &0.911 &0.119 &0.945 \\
 \end{sidewaystable}
 
 \begin{sidewaystable}
+\centering
 \tiny
 %\centering
 \caption{Continue...The Parameters of Heterogeneous Lanchester Model. The parameters are obtained from maximum likelihood estimation from heterogeneous tank against tank and artillery data of Kursk battle with each day as single phase.}
@@ -1648,6 +1685,7 @@ Phase XIV &297.3759 &0.007 &0.005 &0.576 &0.01\\
 
 % \setcounter{table}{4}
 \begin{sidewaystable}
+\centering
 \tiny
 \caption{Fitted Tank Losses and residual sum of square using Heterogeneous Lanchester model. The tank and arty components of the fitted models are obtained through maximum likelihood estimation method from heterogeneous tank against tank and artillery data of Kursk battle.}
 %\label{tabladeseables}
@@ -1676,6 +1714,7 @@ phase 14&	85.00&	83.94&	1.06	&2.64E-07\\\hline
 \end{sidewaystable}
 
 \begin{sidewaystable}
+\centering
 \tiny
 \caption{Continue Fitted Tank Losses and residual sum of square using Heterogeneous Lanchester model. The tank and arty components of the fitted models are obtained through maximum likelihood estimation method from heterogeneous tank against tank and artillery data of Kursk battle.}
 %\label{tabladeseables}
@@ -1708,6 +1747,7 @@ phase 14&	6.00&	4.91&	1.09&	9.07E-07\\\hline
 
 % \setcounter{table}{6}
 \begin{sidewaystable}
+\centering
 % \begin{table}
 \tiny
 \caption{Applications of Lanchester's Differential Equations on various Battles}
@@ -1721,7 +1761,7 @@ Sl. No. & Battle Name	& Equations   \\
 1& Iwo Jima\autocite{Rbloggers:2016} &$\frac{d(USA)}{dt}=-a_{USA}.(Jap)^p(USA)^q,\frac{d(Jap)}{dt}=-b_{Jap}.(Jap)^q(USA)^p$,\\
 \hline
 2&Battle of Atlantic\autocite{Washburn:2000} &$\Dot{M}=2(S/E),\Dot{S}=-(1.6\times{10^{-6}}E+8\times10^{-4})S+.7,\Dot{E}=3.2\times{10^{-7}}S{E+.5}$ \\\hline
-3&Battle of Trafalgar\autocite{Kingman2002StochasticAO},\autocite{DanTeague} & $\Dot{A}=-bB,\Dot{B}=-aA$  \\\hline
+3&Battle of Trafalgar\autocite{Kingman2002StochasticAO},\autocite{DanTeague},\autocite{1231440} & $\Dot{A}=-bB,\Dot{B}=-aA$  \\\hline
 4&Battle of Kursk\autocite{LukasTurkes:2004} &$\Dot{S}=-adS^pG^q,\Dot{G}=-b(\frac{1}{d})S^qG^p$  \\\hline
 5&Battle of Ardennes\autocite{Bracken:1995} &$\Dot{S}=-adS^pG^q,\Dot{G}=-b(\frac{1}{d})S^qG^p$  \\\hline
 6&Battle of Britain\autocite{JohsonMackey:2011} &$\Dot{B}=-aB^pG^q,\Dot{G}=-bB^qG^p$ \\\hline
@@ -1734,6 +1774,7 @@ Sl. No. & Battle Name	& Equations   \\
 % \end{table}
 
 \begin{sidewaystable}
+\centering
 % \begin{table}
 \tiny
 \caption{Continue...Applications of Lanchester's Differential Equations on various Battles}
@@ -1855,13 +1896,15 @@ Total losses are divided into two components, losses due to tank and losses due 
 
 \printbibliography
 \clearpage
-\printglossary[type=\acronymtype]
-% \printglossaries
-\tiny
+% \printglossary[type=\acronymtype]
+\newpage
+ % \printglossaries
+  \printglossary[title=Glossary And Acronym, toctitle=Glossary And Acronym]
+ \footnotesize
 \printindex
-% \newpage
-% \newpage
-% \newgeometry{margin=0in,bmargin=0in}
+\newpage
+\newpage
+\newgeometry{margin=0in,bmargin=0in}
 \newgeometry{margin=0in,bmargin=0in}
 \voffset=0in
 % \vspace*{-0.16in} % only needed for first page
@@ -1871,11 +1914,11 @@ Total losses are divided into two components, losses due to tank and losses due 
  % \raisebox{3in}[0in][0in]{\color{white}
  % \makebox[\textwidth][c]{\Huge Text over Image}}
 \
-% \thispagestyle{empty}
-% \addtocounter{page}{-1}%
-%  \newpage
-% % \RaggedLeft
-%  \includegraphics[width=\paperwidth,height=\paperheight]{deep_cover_front.jpg}
+\thispagestyle{empty}
+\addtocounter{page}{-1}%
+ \newpage
+% \RaggedLeft
+ % \includegraphics[width=\paperwidth,height=\paperheight]{deep_cover_front.jpg}
 
 
 
